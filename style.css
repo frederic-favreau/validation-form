@@ -41,6 +41,14 @@ input:focus {
     border-radius: 5px;
 }
 
+input.valid {
+    border: 2px solid green;
+}
+
+input.invalid {
+    border: 2px solid red;
+}
+
 input[type=submit] {
     background-color: rgb(50, 51, 73);
     color: #FFF;
@@ -55,7 +63,10 @@ input[type=submit].valid {
 .box-alert {
     z-index: 1;
     position: absolute;
-    width: 100%;
+    transform: translate(-50%, -50%);
+    bottom: -120px;
+    left: 50%;
+    width: 80%;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
