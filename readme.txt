@@ -1,0 +1,7 @@
+- Le user doit faire moins de 20 caractères
+- Le mail doit être une adresse mail valide et unique
+- Le mot de passe doit
+    - faire au moins 8 caractères
+    - avoir au moins 1 majuscule
+    - avoir au moins 1 caractère spécial 
+- Le Confirmer le password doit être identique au password
