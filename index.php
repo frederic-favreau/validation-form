@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="#">
+    <form action="register.php" method="POST">
         <div class="row">
             <label for="username">Username</label>
             <input type="text" id="username" name="username">
@@ -23,8 +23,8 @@
             <input type="password" id="password" name="password">
         </div>
         <div class="row">
-            <label for="password">Confirmer le Password</label>
-            <input type="password" id="password2">
+            <label for="password2">Confirmer le Password</label>
+            <input type="password" id="password2" name="password2">
             <p class="rules">Au moins 8 caractères</p>
             <p class="rules">Au moins 1 majuscule</p>
             <p class="rules">Au moins 1 caractère spécial</p>

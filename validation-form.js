@@ -1,7 +1,24 @@
-// Événement de soumission du formulaire
-document.querySelector("form").addEventListener("click", function (e) {
-  e.preventDefault();
+document.querySelector("form").addEventListener("submit", function (e) {
+  console.log("Submitting form...");
+  if (!isFormValid()) {
+    console.log("Form is not valid, preventing submission.");
+    e.preventDefault();
+  }
 });
+
+function isFormValid() {
+  const inputs = document.querySelectorAll("input");
+  for (const input of inputs) {
+    if (input.classList.contains("invalid")) {
+      console.log(`Invalid input found: ${input.id}`); // Debugging
+      return false;
+    }
+  }
+  console.log("All inputs are valid."); // Debugging
+  return true;
+}
+
+// Le reste du code est identique...
 
 // Fonctions communes
 function createAlertDiv(row) {
